@@ -1,4 +1,7 @@
 //Main.java
+//Name: Naveen Ladha
+//PRN: 23070126078
+//Batch: AIML A-3
 
 import java.util.*;
 
@@ -6,8 +9,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         StudentOps operations = new StudentOps();
-    }
-        
+
     //Implement switch case using do while loop to do CRUD operations on student data
     while (true) {
             System.out.println("Choose an option:");
