@@ -7,6 +7,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         StudentOps operations = new StudentOps();
     }
+        
     //Implement switch case using do while loop to do CRUD operations on student data
     while (true) {
             System.out.println("Choose an option:");
@@ -78,10 +79,14 @@ public class Main {
                     long prnToRemove = Long.parseLong(scan.nextLine());
                     operations.removeStudent(prnToRemove); // Remove student from the list
                 }
+
                 case 5 -> {
                     // Exit the program
                     System.out.println("\nExiting...");
                     return;
                 }
+                default -> System.out.println("\nInvalid choice! Try again.");  
+            }
+        }
     }
 }    
