@@ -18,34 +18,23 @@ class StudentOps{
             student.display();
         }
     }
-
+	//Create remove students method
 	public void removeStudent(long prn){
         for(Student student: students){
             if(student.getPrn()==prn){
-                students.remove(student);
-                System.out.println("\nStudent Removed Successfully");
-                return;
-            }
+@@ -29,7 +29,7 @@
         }
             System.out.println("\nStudent not found");
     }
-
+	//Create a method to update the student details based on prn
 	public void updateStudent(long prn, String name, double gpa , String batch , String branch){
         for (Student student : students) {
             if (student.getPrn() == prn) {
-                student.setName(name);
-                student.setGpa(gpa);
-                student.setBatch(batch);
-                student.setBranch(branch);
-
-                System.out.println("\nStudent details updated successfully");
-                return;
-            }
+@@ -44,7 +44,7 @@
         }
         System.out.println("\nStudent not found");
     }
-
+	//Method to fetch details in the form of list of the students
 	public List<Student> getStudents(){
         return students;
     }
-}
