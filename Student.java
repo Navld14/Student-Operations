@@ -15,11 +15,20 @@ class Student{
         this.branch = branch;
         this.batch = batch;
     }
+
     //Add setter and getter method for name
     public String getName(){
         return name;
     }
+
     public void setName(String name){
         this.name = name;
+    }
+    //Add setter and getter method for PRN
+    public long getPrn(){
+        return prn;
+    }
+    public void setPrn(long prn){
+        this.prn = prn;
     }
 }
