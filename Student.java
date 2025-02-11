@@ -6,6 +6,7 @@ class Student{
     private double gpa;
     private String batch;
     private String branch;
+
     //Create a Student class constructor
     public Student(String name, long prn, double gpa, String batch, String branch) {
         this.name = name;
@@ -13,5 +14,12 @@ class Student{
         this.gpa = gpa;
         this.branch = branch;
         this.batch = batch;
+    }
+    //Add setter and getter method for name
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
     }
 }
