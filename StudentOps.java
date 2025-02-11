@@ -37,10 +37,15 @@ class StudentOps{
                 student.setGpa(gpa);
                 student.setBatch(batch);
                 student.setBranch(branch);
+
                 System.out.println("\nStudent details updated successfully");
                 return;
             }
         }
         System.out.println("\nStudent not found");
+    }
+
+	public List<Student> getStudents(){
+        return students;
     }
 }
