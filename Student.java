@@ -23,7 +23,7 @@ class Student{
     public void setName(String name){
         this.name = name;
     }
-    
+
     //Add setter and getter method for PRN
     public long getPrn(){
         return prn;
@@ -31,11 +31,19 @@ class Student{
     public void setPrn(long prn){
         this.prn = prn;
     }
+
     //Add setter and getter method for GPA
     public double getGpa(){
         return gpa;
     }
     public void setGpa(double gpa){
         this.gpa = gpa;
+    }
+    //Add setter and getter method for Batch
+    public String getBatch(){
+        return batch;
+    }
+    public void setBatch(String batch){
+        this.batch = batch;
     }
 }
